@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Added fallback font */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #292d34; /* Dark grayish blue */
+}
+
+nav {
+    background-color: #353945; /* Slightly lighter dark blue */
+    padding: 20px 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav h1 {
+    font-size: 25px;
+    font-weight: 100;
+    color: #f0f4f8; /* Light gray for text */
+    font-family: 'Roboto', sans-serif; /* Added fallback font */
+}
+
+nav h1:hover {
+    font-size: 25px; /* Fixed extra space */
+    color: #FFBADE; /* Pink accent */
+}
+
+.navlinks a {
+    color: #FFBADE; /* Pink links */
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; /* Added fallback font */
+}
+
+.navlinks a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+section {
+    background-color: #292d34; /* Dark grayish blue */
+    padding: 40px 20px;
+}
+
+section .column1 {
+    background-color: transparent;
+    color: #E0E0E0; /* Light gray */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    line-height: 130px;
+    flex-wrap: wrap;
+}
+
+.column1 h1 {
+    padding: 0; /* Use 0 instead of none */
+    margin: 0; /* Use 0 instead of none */
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.column1 #video {
+    background-color: #5c6370; /* Medium gray */
+    height: 80px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    background-image: url(https://plus.unsplash.com/premium_photo-1728729909378-b866cc5b3699?q=80&w=1909&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    padding: 7px;
+}
+
+#video .play {
+    height: 100%;
+    width: 20%;
+    background-color: #59684f;
+    border-radius: 80px;
+    border: solid #EDF2F4 3px;
+    background-image: url('play-line.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play i {
+    color: #f0f4f8;
+    font-size: 2em;
+    padding-left: 1px;
+}
+
+.play i:hover {
+    color: #FFBADE;
+    font-size: 35px;
+    padding-left: 1px;
+}
+
+section .column2 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.column2 h1 {
+    font-size: 100px;
+    color: #E0E0E0; /* Light gray */
+    margin-right: 0;
+    text-align: center;
+}
+
+.column2 p {
+    color: #f0f4f8; /* Light gray */
+    margin-top: auto; /* This will push the p tag to the bottom */
+    margin-left: 0;
+    font-size: 1em;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section .banner {
+    background-color: #5c6370;
+    height: 200px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 30px;
+    background-image: url(https://media.istockphoto.com/id/2149530993/photo/digital-human-head-concept-for-ai-metaverse-and-facial-recognition-technology.jpg?s=1024x1024&w=is&k=20&c=Ob0ACggwWuFDFRgIc-SM5bLWjNbIyoREeulmLN8dhLs=);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner .arrow {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #353945;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10%;
+    right: 5%;
+}
+
+.arrow i {
+    color: white;
+    font-size: 25px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 768px) {
+    .navlinks {
+        gap: 40px;
+    }
+    
+    section .column1 h1 {
+        font-size: 120px;
+    }
+    
+    section .column2 h1 {
+        font-size: 120px;
+    }
+    
+    section .column2 p {
+        letter-spacing: 3px;
+    }
+    
+    section .banner {
+        height: 300px;
+    }
+    
+    .banner .arrow {
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navlinks {
+        gap: 60px;
+    }
+    
+    section .column1 h1 {
+        font-size: 175px;
+    }
+    
+    section .column2 h1 {
+        font-size: 175px;
+    }
+    
+    section .column2 p {
+        letter-spacing: 4px;
+    }
+    
+    section .banner {
+        height: 400px;
+    }
+    
+    .banner .arrow {
+        height: 75px;
+        width: 75px;
+        font-size: 40px;
+    }
+}
